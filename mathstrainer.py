@@ -73,7 +73,7 @@ class MathsTrainer(object):
         """
 
         x = random.randint(0, self.multiplication)
-        y = random.randint(0, self.multiplicationu)
+        y = random.randint(0, self.multiplication)
         while True:
             a = input('{} / {} = ? \n'.format(x * y, y))
             if int(a) == x:
@@ -101,7 +101,7 @@ class MathsTrainer(object):
         time_left = self.time
         while time_left > 0:
             print( '{} Seconds Left'.format(int(time_left)))
-            q = random.randint(0, 1, 2, 3)
+            q = random.randint(0, 4)
             if q == 0:
                 self.addition_q()
             if q == 1:
